@@ -1,7 +1,3 @@
-Absolutely! Below is a template for a README.md file for a Word Counter tool on GitHub:
-
----
-
 # Word Counter
 
 ## Overview
