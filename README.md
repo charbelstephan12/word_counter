@@ -7,22 +7,16 @@ The Word Counter is a simple tool designed to count the number of words in text 
 - Counts the total number of words in each text file within a specified directory.
 - Supports various text file formats (e.g., .txt, .md).
 - Provides a summary report with the total word count for the entire directory.
-- Easy to integrate into your GitHub workflow as a pre-commit hook or CI/CD pipeline step.
 
 ## Requirements
 - Python 3.x
-- Git (optional for integration into Git workflows)
 
 ## Installation
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/word-counter.git
+   git clone https://github.com/charbelstephan12/word_counter.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd word-counter
-   ```
-3. Optionally, create a virtual environment to manage dependencies:
+2. Optionally, create a virtual environment to manage dependencies:
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # For Linux/macOS
@@ -55,10 +49,3 @@ To count the words in all text files within the "documents" directory, run the f
 ```bash
 python word_counter.py documents
 ```
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adjust the content according to your specific project details!
