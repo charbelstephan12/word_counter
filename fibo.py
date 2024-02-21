@@ -1,27 +1,25 @@
-f = open("C:\\Users\\Charbel\\Desktop\\project\\demofile.txt")
-txt=f.read().replace('\n',' ')
-txt=txt.upper()
-txt_split=txt.split()
-alphabet="abcdefghijklmnopqrstuvwxyz"
-alphabet=alphabet.upper()
-alphabet=[*alphabet]
-x=[*txt]
+import string
 
 def countX(lst, x):
-    count = 0
-    for ele in lst:
-        if (ele == x):
-            count = count + 1
-    return count
+    return lst.count(x)
+
 
 def letter_by_letter():
-    for i in range(0,26):
-        z=alphabet[i]
-        print(z,":",countX(x,z))
+    for char in alphabet:
+        count = countX(txt, char)
+        if count > 0 and char!=" ":
+            print(char, ":", count)
+        elif count>0 and char==" ":
+            print("space :", count)
 
 def print_letter_count():
-    print("Letter count:",len(txt))
-def print_word_count():
-    print("Word count :",len(txt_split))
+    print("Letter count:", len(txt))
 
-f.close()
+def print_word_count():
+    print("Word count:", len(txt_split))
+
+with open("demo.file.txt") as f:
+    txt = f.read().replace('\n', ' ')
+    txt_split = txt.split()
+
+alphabet = string.printable
