@@ -5,7 +5,6 @@ The Word Counter is a simple tool designed to count the number of words in text 
 
 ## Features
 - Counts the total number of words in each text file within a specified directory.
-- Supports various text file formats (e.g., .txt, .md).
 - Provides a summary report with the total word count for the entire directory.
 
 ## Requirements
@@ -34,18 +33,3 @@ The Word Counter is a simple tool designed to count the number of words in text 
    python word_counter.py /path/to/your/directory
    ```
 2. View the generated report to see the word count statistics.
-
-## Example
-Suppose you have a directory named "documents" containing multiple text files:
-
-```
-documents/
-├── document1.txt
-├── document2.md
-└── document3.txt
-```
-
-To count the words in all text files within the "documents" directory, run the following command:
-```bash
-python word_counter.py documents
-```
